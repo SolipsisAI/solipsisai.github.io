@@ -287,7 +287,10 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-archives
   jekyll-feed (~> 0.15.1)
+  jekyll-paginate
+  jekyll-sitemap
   jekyll-whiteglass
   tzinfo (~> 1.2)
   tzinfo-data
