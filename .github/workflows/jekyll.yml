@@ -1,4 +1,4 @@
-name: Publish github pages
+name: Publish jekyll
 
 on:
   push
