@@ -9,8 +9,12 @@ description: >-
 	{% for product in site.products %}
 		<li>
 			<div class="name">{{ product.name }}</div>
-			{% for version in product.versions %}
-				<div class="position"><a href={{ version.url }}>{{ version.name }}</a></div>
+			{% for platform in product.platforms %}
+				<div class="position">
+					<a href={{ platform.url }}>{{ platform.name }}</a>
+					&nbsp;
+					[{{ platform.version }}]
+				</div>
 			{% endfor %}
 		</li>
 	{% endfor %}
