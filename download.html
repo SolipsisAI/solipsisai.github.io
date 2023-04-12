@@ -1,0 +1,17 @@
+---
+title: Download
+description: >-
+  Download our apps.
+---
+
+<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+<ul class="staff">
+	{% for product in site.products %}
+		<li>
+			<div class="name">{{ product.name }}</div>
+			{% for version in product.versions %}
+				<div class="position"><a href={{ version.url }}>{{ version.name }}</a></div>
+			{% endfor %}
+		</li>
+	{% endfor %}
+</ul>
