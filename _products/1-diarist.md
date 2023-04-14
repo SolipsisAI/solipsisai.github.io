@@ -1,5 +1,6 @@
 ---
 name: Diarist
+image_path: diarist.png
 platforms:
   - name: macOS (intel)
     version: 1.0.0-alpha
