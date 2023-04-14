@@ -17,6 +17,7 @@ description: >-
 			<div class="name">{{ product.name }}</div>
 			{% for platform in product.platforms %}
 				<div class="position">
+					<i class="devicon-{{ platform.icon }} colored"></i>  
 					<a href={{ platform.url }}>{{ platform.name }}</a>
 					&nbsp;
 					[{{ platform.version }}]
